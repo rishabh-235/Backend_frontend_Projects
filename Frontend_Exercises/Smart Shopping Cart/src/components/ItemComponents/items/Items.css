@@ -1,0 +1,24 @@
+.items-container{
+    margin-top: 6rem;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.items-container h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.items-list{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.item-summary-container{
+    display: flex;
+
+}

@@ -1,0 +1,53 @@
+.additional-info-container {
+    max-width: 600px;
+    margin: 8rem auto 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.additional-info-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.additional-info-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.additional-info-container label {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.additional-info-container input[type="file"],
+.additional-info-container input[type="date"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.additional-info-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.additional-info-container button:hover {
+    background-color: #0056b3;
+}

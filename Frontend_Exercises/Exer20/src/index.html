@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <link rel="stylesheet" href="./output.css">
+    <script>
+        function expendImage(e){
+    let objId = e.srcElement.id;
+    let element = document.getElementById(objId);
+    if(objId==="img1")
+    {
+        element.className="border-black w-[12rem] h-[12rem] cursor-pointer transition-all duration-700 scale-x-[3]"
+        document.getElementById("img2").className= "border-black w-[12rem] h-[12rem] cursor-pointer transition-all duration-700 translate-x-[12rem]"
+        document.getElementById("img3").className= "border-black w-[12rem] h-[12rem] cursor-pointer transition-all duration-700 translate-x-[12rem]"
+    }
+    else if(objId==="img2")
+    {
+        element.className="border-black w-[12rem] h-[12rem] cursor-pointer transition-all duration-700 scale-x-[3]"
+        document.getElementById("img1").className= "border-black w-[12rem] h-[12rem] cursor-pointer transition-all duration-700 -translate-x-[12rem]"
+        document.getElementById("img3").className= "border-black w-[12rem] h-[12rem] cursor-pointer transition-all duration-700 translate-x-[12rem]"
+    }
+    else
+    {
+        element.className="border-black w-[12rem] h-[12rem] cursor-pointer transition-all duration-700 scale-x-[3]"
+        document.getElementById("img1").className= "border-black w-[12rem] h-[12rem] cursor-pointer transition-all duration-700 -translate-x-[12rem]"
+        document.getElementById("img2").className= "border-black w-[12rem] h-[12rem] cursor-pointer transition-all duration-700 -translate-x-[12rem]"
+    }
+}
+    </script>
+</head>
+<body>
+    <div class="flex justify-center items-center w-[100vw] h-[100vh] container">
+        <di class="image_grid grid grid-cols-3 w-[36rem] h-[24rem] grid-rows-2 gap-1">
+            <img id="img1" class="border-black w-[12rem] h-[12rem] cursor-pointer transition-all ease-out duration-300" onclick="expendImage(event)"  src="https://res.cloudinary.com/dmfyjaagg/image/upload/v1739782671/CuvetteImages/Image_gallery1.jpg" alt="img1">
+            <img id="img2" class="border-black w-[12rem] h-[12rem] cursor-pointer transition-all ease-out duration-300" onclick="expendImage(event)"  src="https://res.cloudinary.com/dmfyjaagg/image/upload/v1739782661/CuvetteImages/Image_gallery2.jpg" alt="img2">
+            <img id="img3" class="border-black w-[12rem] h-[12rem] cursor-pointer transition-all ease-out duration-300" onclick="expendImage(event)"  src="https://res.cloudinary.com/dmfyjaagg/image/upload/v1739782661/CuvetteImages/Image_gallery3.jpg" alt="img3">
+        </div> 
+    </div>
+</body>
+</html>

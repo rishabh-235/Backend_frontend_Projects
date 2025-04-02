@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  gap:0.8rem;
+  border: 1px solid gray;
+  border-radius: 14px;
+  padding: 2rem 3rem;
+}
+
+input{
+  width: 15rem;
+  padding:0.8rem 1rem;
+  border-radius: 8px;
+  border:1px solid gray;
+}
+
+.error-input{
+  width: 15rem;
+  padding:0.8rem 1rem;
+  border-radius: 8px;
+  border:1px solid #d9292c;
+}
+
+.form-input{
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  gap:0.25rem
+}
+
+.error-display{
+  font-size:0.7rem;
+  color: #d9292c;
+  margin-top: -2px;
+  margin-left: 6px;
+}

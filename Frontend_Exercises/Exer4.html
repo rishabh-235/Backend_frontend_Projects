@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex_Table</title>
+
+    <style>
+        table,tr,th,td {
+            border: 1px solid orange;
+            border-collapse: collapse;
+            width: 50rem;
+            padding: 3px;
+            text-align: center;
+            font-size: smaller;
+            font-weight: 600;
+            color: gray;
+        }
+
+        th{
+            background-color: gray;
+            color: white;
+        }
+
+        .total{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h2>Complax Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Firm</th>
+                <th>Org</th>
+                <th>Lob</th>
+                <th>Sub Lob</th>
+                <th>Business Plan</th>
+                <th>Business Component</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="11">XYZ</td>
+                <td rowspan="5">CST</td>
+                <td rowspan="3">CT</td>
+                <td>ADS</td>
+                <td>1</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>BTO</td>
+                <td>2</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>CSE</td>
+                <td>3</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td rowspan="2">VCT</td>
+                <td>ADS</td>
+                <td>4</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>BTO</td>
+                <td>5</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td class="total" colspan="3">Sub Total</td>
+                <td>6</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td rowspan="4">CST</td>
+                <td rowspan="3">CT</td>
+                <td>ADS</td>
+                <td>7</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>BTO</td>
+                <td>8</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>CSI</td>
+                <td>9</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>VCT</td>
+                <td>ADS</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td class="total" colspan="3">Sub Total</td>
+                <td>11</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

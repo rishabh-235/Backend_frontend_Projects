@@ -1,0 +1,94 @@
+.job-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; ;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 6rem;
+    gap: 15px;
+}
+
+.job-details h1{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+    left: 45%;
+}
+
+.job-details h2{
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.company-name{
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.jobid{
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.job-details-description{
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+    width: 40%;
+}
+
+.requirements{
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.requirements span{
+    font-weight: bold;
+}
+
+.requirements ul{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.requirements li{
+    margin: 5px 0;
+}
+
+.apply-now-btn{
+    text-align: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.apply-now-btn:hover{
+    background-color: #0056b3;
+}
+
+.job-details-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 5px;
+}
+
+.job-details-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    gap: 5px;
+}

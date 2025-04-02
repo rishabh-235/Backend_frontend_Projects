@@ -1,0 +1,40 @@
+.cart {
+  margin-top: 6rem;
+  padding: 3rem;
+  box-sizing: border-box;
+  width: 99vw;
+}
+
+.cart-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.cart-components {
+  display: flex;
+  align-items: start;
+  margin-top: 3rem;
+  gap: 4rem;
+}
+
+.cart-items {
+  flex-basis: 70%;
+}
+
+.total-items{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 19.2rem;
+  background-color: #333;
+  box-sizing: border-box;
+  width:1.5rem;
+  height: 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  font-size: 0.7rem
+}

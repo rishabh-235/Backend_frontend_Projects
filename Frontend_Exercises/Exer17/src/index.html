@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./output.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="w-[100vw] h-[100vh] flex justify-center items-center">
+      <div>
+        <table class="">
+          <thead>
+            <tr class="h-16">
+              <th>Product Name</th>
+              <th>Product Price</th>
+            </tr>
+          </thead>
+          <tbody id="tablebody">
+                <tr class="h-16">
+                    <td class="px-5">
+                      <input
+                        id="item-name-input"
+                        name="item-name-input"
+                        class="border-2 py-2 rounded-md w-[12rem] px-2"
+                        data-ns-test="item-name"
+                        placeholder="Name"
+                        type="text"
+                      />
+                    </td>
+                    <td class="px-5">
+                      <input
+                        id="item-price-input"
+                        class="border-2 py-2 rounded-md w-[8rem] px-2"
+                        data-ns-test="item-price"
+                        placeholder="Price"
+                        type="number"
+                      />
+                    </td>
+                    <td>
+                      <button type="submit"
+                        class="border-2 bg-slate-400 hover:bg-slate-300 rounded-md px-5 py-2 cursor-pointer"
+                        onclick="add(event)"
+                      >
+                      Add
+                    </button>
+                    </td>
+                  </tr>
+          </tbody>
+          <tfoot>
+            <tr class="h-16 text-center">
+              <td>Grand Total</td>
+              <td id="gradtotal">Rs</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

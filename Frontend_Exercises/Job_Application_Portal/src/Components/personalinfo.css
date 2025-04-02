@@ -1,0 +1,92 @@
+.personal-info-container {
+  max-width: 600px;
+  margin: 8rem auto 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info-container h1 {
+  text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.personal-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px auto;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  transition: transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.personal-info-form h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  position: relative;
+  left: 45%;
+}
+
+.personal-info-form h2 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.personal-info-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.personal-info-form label {
+  font-size: 1rem;
+  color: #333;
+}
+
+.personal-info-form input[type="text"],
+.personal-info-form input[type="email"],
+.personal-info-form input[type="tel"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 96%;
+  height: 30px;
+  padding: 8px;
+}
+
+.next-btn {
+  text-align: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.next-btn:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s ease;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.7rem;
+}

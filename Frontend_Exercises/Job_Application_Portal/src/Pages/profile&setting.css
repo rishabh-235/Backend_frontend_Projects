@@ -1,0 +1,66 @@
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    padding: 1rem;
+}
+
+.profile-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1.8rem;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+    width: 30rem;
+    height: 13.5rem;
+}
+
+.profile-details div{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-details h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.profile-details p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.profile-email-input{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    height: 2rem;
+}
+
+.register-btn{
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.register-btn:hover{
+    background-color: #0056b3;
+}

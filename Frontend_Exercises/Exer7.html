@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <style>
+        textarea{
+            border: 2px solid rgb(200, 200, 200);
+            border-radius: 3px;
+        }
+
+        ul{
+            list-style: none;
+            border: 1px solid rgb(217, 217, 217);
+            border-radius: 3px;
+            text-align: start;
+            padding-bottom: 30px;
+            font-size: smaller;
+
+        }
+
+        li::after{
+            content: "";
+            border-bottom: 1px solid rgb(223, 223, 223);
+            display: block;
+        }
+
+        p{
+            color: rgb(153, 152, 152);
+        }
+    </style>
+</head>
+<body>
+    <h2>Comments</h2>
+    <h4>Share your thoughts below!</h4>
+    <form >
+        <textarea placeholder="write your comment here..." type="textarea" cols="40" rows="5"></textarea>
+        <input type="submit">
+    </form>
+
+    <div>
+        <ul>
+            <li>
+                <h4>This an excellent article!</h4>
+                <p><i>Akash</i> <i>Today</i></p>
+            </li>
+            <li>
+                <h4>I totally agree.</h4>
+                <p><i>Mrityunjay</i> <i>Yesterday</i></p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

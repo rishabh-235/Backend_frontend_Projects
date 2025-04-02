@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <style>
+      body {
+        font-family: "Press Start 2P", serif;
+      }
+
+      .snake, .food{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="h-[100vh] w-[100vw] flex flex-col justify-center items-center">
+      <div class=" w-[400px]">
+        <h1 class="-mt-[4rem] mb-[1rem] text-[1.8rem] text-center">SNAKE GAME</h1>
+        <div class=" scoreBoard flex justify-between w-full">
+          <p id="score" class="text-center text-[0.6rem] mb-1">SCORE:0000</p>
+          <p id="highest_score" class="text-center text-[0.6rem] mb-1">HIGHSCORE:0000</p>
+        </div>
+      </div>
+      <div
+        id="gameContainer" class="w-[400px] h-[400px] bg-green-800 border border-black grid grid-rows-[repeat(40,_minmax(0,_1fr))]  grid-cols-[repeat(40,_minmax(0,_1fr))]"
+      >  
+      </div>
+      <div id="instruction_text" class="flex flex-col justify-center items-center gap-1">
+        <h2 class=" text-[1.4rem]">START GAME</h2>
+        <p class=" text-[0.9rem]">ENTER SPACE TO START GAME</p>
+      </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

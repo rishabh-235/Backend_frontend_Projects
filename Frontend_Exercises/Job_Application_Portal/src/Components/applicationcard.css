@@ -1,0 +1,49 @@
+.application-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 12px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.application-card-container:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.application-description h3 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.application-description p {
+    margin: 4px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.application-description-details{
+    width: 70%;
+}
+
+.view-detials-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 12px;
+}
+
+.view-detials-btn:hover {
+    background-color: #0056b3;
+}

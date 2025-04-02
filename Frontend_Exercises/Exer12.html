@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Shelf</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .frontface {
+            height: 32rem;
+            width: 21rem;
+            border: 1px solid black;
+            transform: translateY(0rem) translateZ(0rem);
+        }
+
+        .backface {
+            display: flex;
+            flex-direction: column;
+            gap: 7rem;
+            height: 28rem;
+            width: 19rem;
+            border: 1px solid black;
+            transform: translateX(0.9rem)  translateZ(-2.8rem);
+            overflow: hidden;
+        }
+
+        .backline, .backface, .frontface, .container{
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .backline{
+            border-bottom: 2px solid black;
+        }
+
+        .frontline1{
+            border-bottom: 2px solid black;
+            margin-top: -5.5rem;
+        }
+
+        .frontline2{
+            border-bottom: 2px solid black;
+            margin-top: -7rem;
+        }
+
+        .frontline3{
+            border-bottom: 2px solid black;
+            margin-top: -8.9rem;
+        }
+
+        .jointer1{
+            border-bottom: 4px solid black;
+            width: 5.8rem;
+            transform-origin: left;
+            transform: rotateY(89deg);
+        }
+        .jointer2{
+            border-bottom: 4px solid black;
+            width: 5.8rem;
+            transform-origin: right;
+            transform:translateX(15.2rem) translateY(-4px) rotateY(-88deg);
+        }
+
+        .jointer3{
+            border-bottom: 2px solid black;
+            width: 3.5rem;
+            transform-origin: left;
+            transform: translateY(7.8rem) rotateY(78deg);
+        }
+
+        .jointer4{
+            border-bottom: 2px solid black;
+            width: 3.9rem;
+            transform-origin: right;
+            transform: translateX(17.05rem) translateY(7.6rem) rotateY(-79.5deg);
+        }
+
+        .jointer5{
+            border-bottom: 2px solid black;
+            width: 2.2rem;
+            transform-origin: right;
+            transform:translateX(-0.5rem) translateY(14.9rem) rotate(-40deg);
+        }
+
+        .jointer6{
+            border-bottom: 2px solid black;
+            width: 2.3rem;
+            transform-origin: left;
+            transform:translateX(19.2rem) translateY(14.8rem) rotate(38deg);
+        }
+
+        .jointer7{
+            border-bottom: 2px solid black;
+            width: 2.4rem;
+            transform-origin: right;
+            transform:translateX(-0.7rem) translateY(21.2rem) rotate(-46.5deg);
+        }
+
+        .jointer8{
+            border-bottom: 2px solid black;
+            width: 2.5rem;
+            transform-origin: left;
+            transform:translateX(19.2rem) translateY(21.1rem) rotate(44deg);
+        }
+
+        .jointer9{
+            border-bottom: 2px solid black;
+            width: 4.15rem;
+            transform-origin: right;
+            transform:translateX(-2.35rem) translateY(27.1rem) rotate(-64.5deg);
+        }
+
+        .jointer10{
+            border-bottom: 2px solid black;
+            width: 4.2rem;
+            transform-origin: left;
+            transform:translateX(19.2rem) translateY(27rem) rotate(64.5deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="container">
+            <div class="frontface">
+                <div class="jointer1"></div>
+                <div class="jointer2"></div>
+                <div class="jointer3"></div>
+                <div class="jointer4"></div>
+                <div class="jointer5"></div>
+                <div class="jointer6"></div>
+                <div class="jointer7"></div>
+                <div class="jointer8"></div>
+                <div class="jointer9"></div>
+                <div class="jointer10"></div>
+                <div class="backface">
+                    <div class="backline"></div>
+                    <div class="backline"></div>
+                    <div class="backline"></div>
+                    <div class="backline"></div>
+                </div>
+                <div class="frontline1"></div>
+                <div class="frontline2"></div>
+                <div class="frontline3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

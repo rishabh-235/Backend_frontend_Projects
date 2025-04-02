@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Delegation</title>
+
+    <style>
+      .but {
+        background-color: rgba(199, 199, 199, 0.8);
+        padding: 0.8rem 2rem;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+
+      .success {
+        background-color: rgb(97, 186, 97);
+      }
+    </style>
+  </head>
+  <body>
+    <div onclick="handleEvent(event)" id="parent">
+      <button id="but1" class="but">Button1</button>
+      <button id="but2" class="but">Button2</button>
+      <button id="but3" class="but">Button3</button>
+    </div>
+
+    <script>
+      //Event Bubbling is a Phase comes in Event Propagation, where event after occuring at the target element bubbles up to the parent and ancestors.
+
+      //Event Delegation
+      const parentElement = document.getElementById("parent");
+      const handleEvent = (event) => {
+        const button = document.getElementById(event.target.id);
+        button.classList.add("success");
+        console.log(`${event.target.id} Clicked!`);
+      };
+
+      //Use of 'This' Keyword
+      const person = {
+        name: "Rishabh",
+        age: 25,
+        gender: "Male",
+        getInfo: function () {
+          return `I am ${this.name} and i am ${this.age} year old ${this.gender}`;
+        },
+      };
+
+      console.log(person.getInfo());
+    </script>
+  </body>
+</html>

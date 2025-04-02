@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero_Amazon.com</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .banner{
+            background-image: url("./images/bg.jpg");
+            background-size: cover;
+            overflow: hidden;
+            height: 80vh;
+        }
+
+        .product{
+            display: flex;
+            margin-top: -20rem;
+        }
+
+        img{
+            height: 30vh;
+            width: 10vw;
+            margin-bottom: 30px;
+        }
+        
+        .product{
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .pro{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 3px 3px rgb(215, 215, 215);
+            padding-top: 40px;
+            height: 50vh;
+            width: 25vw;
+            margin: 20px;
+            background-color: white;
+        }
+
+        p{
+            margin-top: 10px;
+            font-size: large;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        
+    </div>
+    <div class="product">
+        <div class="pro product1">
+            <img src="./images/p3.jpg" alt="product1">
+            <h2>Product 1</h2>
+            <p>Product 1 Discription</p>
+        </div>
+        <div class="pro product2">
+            <img src="./images/p4.jpg" alt="product2">
+            <h2>Product 2</h2>
+            <p>Product 2 Discription</p>
+        </div>
+        <div class="pro product3">
+            <img src="./images/product1.jpg" alt="product3">
+            <h2>Product 3</h2>
+            <p>Product 3 Discription</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - log in or sign up</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .login{
+            display: flex;
+            justify-content: center;
+            width: 65vw;
+            height: 80vh;
+        }
+
+        .logo{
+            width: 60%;
+            margin-left: -2rem;
+            margin-bottom: -0.8rem;
+        }
+
+        .quote{
+            font-size: 1.8rem;
+            color: #1c1e21;
+        }
+
+        .d1{
+            flex-basis: 37rem;
+            margin-top: 5rem;
+            padding: 1rem;
+        }
+
+        .d2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-basis: 23rem;
+            padding: 1rem;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 3rem;
+            padding: 1rem;
+            border-radius: 6px;
+            box-shadow: 0px 0px 20px 2px rgb(212, 212, 212);
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        input{
+            width: 23rem;
+            height: 3.5rem;
+            border: 1px solid #dbe0e5;
+            border-radius: 8px;
+            outline: none;
+            box-sizing: border-box;
+            padding: 1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        input:focus{
+            border: 1px solid #0866ff;
+        }
+
+        input::placeholder{
+            font-size: 1.05rem;
+            color: rgb(139, 139, 139);
+        }
+
+        .submit{
+            margin-top: 0.2rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+            background-color: #0866ff;
+        }
+
+        a{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: #0866ff;
+            font-size: 0.9rem;
+            margin-top: 0.2rem;
+        }
+
+        a::after{
+            content: "";
+            width: 23rem;
+            margin-top: 1.2rem;
+            border-bottom: 1px solid rgb(211, 211, 211);
+        }
+
+        .signupbutton{
+            width: 12rem;
+            height: 3rem;
+            border: none;
+            border-radius: 7px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: white;
+            background-color: #42b72a;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="d1">
+                <img class="logo" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="logo">
+                <p class="quote">Facebook helps you connect and share with the people in your life.</p>
+            </div>
+            <div class="d2">
+                <div class="card">
+                    <form>
+                        <input placeholder="Email address or phone number" type="text" name="email" id="email">
+                        <input placeholder="password" type="password" name="password" id="password">
+                        <input class="submit" type="submit" value="Log in">
+                    </form>
+                    <a href="#">Forgotten password?</a>
+                    <button class="signupbutton">Create new account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 2rem;
+}
+
+.heading{
+    text-align: center;
+}
+
+.main{
+    margin-top:10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+}
+
+.button-container{
+    display: flex;
+    gap: 1rem;
+}
+
+button{
+    padding:0.8rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid black;
+    cursor: pointer;
+}
