@@ -1,0 +1,22 @@
+{
+  "name": "express_server",
+  "version": "1.0.0",
+  "description": "A simple server showing Demo of Express Routing and MiddleWares",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "Express_Routing",
+    "Middlewares"
+  ],
+  "author": "Rishabh Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

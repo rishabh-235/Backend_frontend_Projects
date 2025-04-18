@@ -1,0 +1,11 @@
+{
+  "name": "exer1",
+  "version": "1.0.0",
+  "description": "cuvette exercises",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "author": "Rishabh Gupta",
+  "license": "ISC"
+}
